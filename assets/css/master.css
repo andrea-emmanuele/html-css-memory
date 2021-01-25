@@ -14,6 +14,8 @@ header, main {
     margin: 0 auto;
 }
 
+/*row and coloumns*/
+
 div.row:after {
     content: '';
     display: table;
@@ -33,6 +35,8 @@ div.col-25 {
     padding: 15px 8px;
 }
 
+/*page title*/
+
 header div#main-title {
     color: #FFF;
     font-size: 35px;
@@ -41,6 +45,8 @@ header div#main-title {
     text-shadow: 1px 1px 1px #666;
     padding: 0;
 }
+
+/*main content*/
 
 main div.card {
     background: url("../img/pattern.png") repeat-y top center;
@@ -83,4 +89,11 @@ main div.card.active > img,
 main div.card:hover > div.card-title,
 main div.card.active > div.card-title {
     display: block;
+}
+
+/*disclaimer*/
+
+footer p {
+    text-align: center;
+    padding-top: 10px;
 }
