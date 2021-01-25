@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ADD8E6;
+    font-family: 'Sigmar One', sans-serif;
+}
+
+header, main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+div[class^="col-"] {
+    float: left;
+}
+
+div.col-100 {
+    width: 100%;
+}
+
+div.col-25 {
+    width: 25%;
+    padding: 10px 8px;
+}
+
+header div#main-title {
+    color: #FFF;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #666;
+    padding: 0;
+}
+
+main div.card {
+    background: #FFF url("../img/pattern.png") repeat-y top center;
+    background-size: contain;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #999;
+    position: relative;
+}
+
+main div.card:hover {
+    background: #FFF;
+}
+
+main div.card > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
